@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>El tiempo en Madrid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/tiempo_actual.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div id="contenido" class="container-fluid contenido w-100 d-flex align-items-center flex-column text-white">
+        <div class="container justify-content-center w-50">
+            <div class="card">
+                <h1 class="text-center text-uppercase sombra" id="ciudad">Clima en </h1>
+                <div class="card-body " alt=" ">
+                    <div class="d-flex d-flex justify-content-between">
+                        <h4 class="justify-content-start" id="dia_hoy"></h4>
+                        <h4 class="justify-content-end" id="tempMinMax"></h4>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                        <img src="" class="img_dia d-flex justify-content-center" id="img_clima">
+                        <h1 id="temp" class="temp_hoy_grados"></h1>
+                    </div>
+                    <h3 class="text-center" id="estado"></h3>
+                    <br>
+                    <div class="d-flex d-flex justify-content-between">
+                        <div>
+                            <h5 id="nLluvia"></h5>
+                            <h5 id="nNieve">Nivel de Nieve 1h: </h5>
+                        </div>
+                        <div>
+                            <h5 id="nNubes">Nivel de Nubes: </h5>
+                            <h5 id="vViento">Vel. de Viento: </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container justify-content-center">
+            <div class="container justify-content-center diario">
+                <h1 class="text-center sombra">Diario</h1>
+                <div class="card-group d-flex bd-highlight">
+                    <div class="card border-right border-secondary">
+                        <img src=" " class="card-img-top ">
+                        <div class="card-body " alt=" ">
+                            <h6 class="card-title text-center" id="dia_1"></h6>
+                            <h6 class="card-title text-center" id="dia_1_fecha"></h6>
+                            <div class="container d-flex flex-column">
+                                <img src="" alt="" id="img_primero" class="img_pron d-flex justify-content-center">
+                                <p class="text-center" id="estado_uno"></p>
+                            </div>
+                            <p class="card-text " id="primero"></p>
+                        </div>
+                    </div>
+                    <div class="card border-right border-secondary">
+                        <img src=" " class="card-img-top ">
+                        <div class="card-body " alt=" ">
+                            <h6 class="card-title text-center" id="dia_2"></h6>
+                            <h6 class="card-title text-center" id="dia_2_fecha"></h6>
+                            <div class="container d-flex flex-column">
+                                <img src="" alt="" id="img_segundo" class="img_pron d-flex justify-content-center">
+                                <p class="text-center" id="estado_dos"></p>
+                            </div>
+                            <p class="card-text " id="segundo"></p>
+                        </div>
+                    </div>
+                    <div class="card border-right border-secondary">
+                        <img src="" class="card-img-top" alt="">
+                        <div class="card-body " alt=" ">
+                            <h6 class="card-title text-center" id="dia_3"></h6>
+                            <h6 class="card-title text-center" id="dia_3_fecha"></h6>
+                            <div class="container d-flex flex-column">
+                                <img src="" alt="" id="img_tercero" class="img_pron d-flex justify-content-center">
+                                <p class="text-center" id="estado_tres"></p>
+                            </div>
+                            <p class="card-text " id="tercero"></p>
+                        </div>
+                    </div>
+                    <div class="card border-right border-secondary">
+                        <img src=" " class="card-img-top ">
+                        <div class="card-body " alt=" ">
+                            <h6 class="card-title text-center" id="dia_4"></h6>
+                            <h6 class="card-title text-center" id="dia_4_fecha"></h6>
+                            <div class="container d-flex flex-column">
+                                <img src="" alt="" id="img_cuarto" class="img_pron d-flex justify-content-center">
+                                <p class="text-center" id="estado_cuatro"></p>
+                            </div>
+                            <p class="card-text " id="cuarto"></p>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <img src=" " class="card-img-top ">
+                        <div class="card-body " alt=" ">
+                            <h6 class="card-title text-center" id="dia_5"></h6>
+                            <h6 class="card-title text-center" id="dia_5_fecha"></h6>
+                            <div class="container d-flex flex-column">
+                                <img src="" alt="" id="img_cinco" class="img_pron d-flex justify-content-center">
+                                <p class="text-center" id="estado_cinco"></p>
+                            </div>
+                            <p class="card-text " id="quinto"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
